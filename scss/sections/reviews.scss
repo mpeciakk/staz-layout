@@ -58,5 +58,13 @@
             right: 0;
             bottom: 80px;
         }
+
+        @media screen and (max-width: 1400px) {
+            margin-right: 100px;
+        }
+
+        @media screen and (max-width: 1024px) {
+            margin-right: 0;
+        }
     }
 }

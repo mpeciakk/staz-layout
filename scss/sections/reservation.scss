@@ -4,6 +4,10 @@
     display: flex;
     padding: 0 256px;
 
+    @media screen and (max-width: 1400px) {
+        padding: 0;
+    }
+
     .content {
         font-family: Arial, Helvetica, sans-serif;
         color: white;
@@ -65,6 +69,10 @@
 
     .image {
         background: $light-gray;
+    
+        @media screen and (max-width: 1400px) {
+            display: none;
+        }
 
         &-left {
             min-width: 293px;
