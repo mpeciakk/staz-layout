@@ -1,0 +1,61 @@
+.home {
+    width: 100vw;
+    background: $light-gray;
+
+    .container {
+        height: 750px;
+        color: white;
+
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .arrow {
+                border: solid white;
+                border-width: 0 1px 1px 0;
+                padding: 32px;
+
+                &-left {
+                    transform: rotate(135deg);
+                }
+
+                &-right {
+                    transform: rotate(-45deg);
+                }
+            }
+
+            .text {
+                text-align: center;
+
+                .title {
+                    font-size: 62px;
+                }
+
+                .subtitle {
+                    font-size: 32px;
+                }
+            }
+        }
+
+        .book-text {
+            margin-top: 128px;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: $orange;
+
+            img {
+                margin-bottom: 16px;
+            }
+
+            .number {
+                font-size: 36px;
+                color: white;
+                margin-top: 8px;
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+.menu {
+    height: 630px;
+
+    .container {
+        height: 750px;
+
+        .content {
+            flex-direction: row;
+            height: fit-content;
+        }
+    }
+
+    .food {
+        width: 50%;
+        height: fit-content;
+        padding-top: 100px;
+
+        .explore-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $orange;
+            border-radius: 4px;
+            width: fit-content;
+            color: white;
+            margin-top: 48px;
+
+            padding: 16px;
+        }
+
+        li:last-child {
+            border: none;
+        }
+    }
+
+    .title {
+        font-size: 35px;
+        margin-bottom: 16px;
+    }
+
+    .item {
+        border-bottom: 1px solid #eeeeee;
+        padding: 12px 0;
+        display: flex;
+
+        &-title {
+            font-size: 16px;
+            padding: 4px 0;
+        }
+
+        &-subtitle {
+            font-size: 14px;
+            color: $gray;
+        }
+
+        &-price {
+            font-size: 26px;
+        }
+
+        .right {
+            text-align: right;
+            margin-left: auto;
+        }
+    }
+
+    .special {
+        width: 50%;
+        height: fit-content;
+        padding-top: 100px;
+        padding-left: 128px;
+    }
+
+    .cards {
+        display: flex;
+        align-items: center;
+
+        .card {
+            box-shadow: 12px 0px 24px 4px rgba(0, 0, 0, 0.1);
+            width: fit-content;
+            background: white;
+
+            .image {
+                width: 320px;
+                height: 210px;
+                background: $light-gray;
+            }
+
+            .text {
+                padding: 32px;
+
+                .title {
+                    font-size: 22px;
+                    margin: 0;
+                }
+
+                .price {
+                    color: $orange;
+                    font-size: 22px;
+                }
+            }
+
+            &-offset {
+                transform: translateX(-56px);
+                z-index: -1;
+                height: fit-content;
+
+                .image {
+                    height: 172px;
+                }
+            }
+        }
+    }
+}
