@@ -1,0 +1,30 @@
+.gallery {
+    .container {
+        padding-top: 104px;
+        padding-bottom: 136px;
+        width: 100vw;
+        background: $blue-gray;
+    }
+
+    .title {
+        margin-bottom: 32px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: row;
+        overflow: scroll;
+        overflow-y: hidden;
+    }
+
+    .image {
+        min-width: 471px;
+        min-height: 340px;
+        background: $gray;
+
+        &:nth-child(odd) {
+            background: $dark-gray;
+        }
+    }
+}
