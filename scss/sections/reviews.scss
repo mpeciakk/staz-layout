@@ -1,0 +1,62 @@
+.reviews {
+    padding-bottom: 128px;
+
+    .title {
+        margin-top: 128px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .image {
+        min-width: 269px;
+        min-height: 295px;
+        background: $light-gray;
+    }
+
+    .review {
+        padding: 24px 64px;
+        margin-right: 300px;
+        position: relative;
+
+        &-title {
+            font-size: 22px;
+            padding: 16px 0;
+        }
+
+        &-description {
+            font-size: 15px;
+            line-height: 2em;
+        }
+
+        &-footer {
+            border-top: solid 1px $very-light-gray;
+            width: fit-content;
+            margin-top: 32px;
+            padding-top: 32px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        &::before {
+            content: '\201C';
+            position: absolute;
+            font-size: 5em;
+            left: 25px;
+            top: 25px;
+        }
+
+        &::after {
+            content: '\201E';
+            position: absolute;
+            font-size: 5em;
+            right: 0;
+            bottom: 80px;
+        }
+    }
+}
